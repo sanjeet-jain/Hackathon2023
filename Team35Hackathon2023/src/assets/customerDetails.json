@@ -1,0 +1,27 @@
+[
+    {
+     "FullName": "Rushda Mansuri",
+     "CustomerID": 2345980,
+     "RewardPoints": 100
+    },
+    {
+     "FullName": "Srujana Endreddy",
+     "CustomerID": 355090,
+     "RewardPoints": 110
+    },
+    {
+     "FullName": "Sanjeet Jain",
+     "CustomerID": 3750996,
+     "RewardPoints": 125
+    },
+    {
+     "FullName": "Harshit Garg",
+     "CustomerID": 1237850,
+     "RewardPoints": 123
+    },
+    {
+     "FullName": "Muthu Arunachalam",
+     "CustomerID": 4279408,
+     "RewardPoints": 110
+    }
+   ]
