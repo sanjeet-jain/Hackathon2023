@@ -64,6 +64,7 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
       }
       var CarbonEmission =
         (packageWeight / maxWeight) * distance * mpg * emissionsPerMile;
+      var Rewards = 100 * (1 - (CarbonEmission * 0.0001));
       var pack: transportHistoryCarbon = {
         TrackingNumber: this.transportHistoryData[i].TrackingNumber,
         Location: this.transportHistoryData[i].Location,
@@ -74,6 +75,7 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
         PackageStatus: this.transportHistoryData[i].PackageStatus,
         Timestamp: this.transportHistoryData[i].Timestamp,
         CarbonFootPrint: CarbonEmission,
+        RewardsPoints: Rewards,
       };
       this.carbonEmissionData.push(pack);
     }
@@ -91,6 +93,7 @@ interface transportHistoryCarbon {
   PackageStatus: String;
   Timestamp: String;
   CarbonFootPrint: Number;
+  RewardsPoints: Number;
 }
 interface CarbonData {
   VehicleType: String;
