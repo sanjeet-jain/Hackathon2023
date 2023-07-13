@@ -76,18 +76,15 @@ a:hover {
 
   .card-div {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
 }
 
 /* Float four columns side by side */
 
 .column {
     float: left;
-    width: 25%;
-    padding: 0 10px;
+    width: 30%;
+    padding: 10px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -120,6 +117,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #351c15;
-    color: white;
+    background-color: #dfdbd7;
+    color: black;
 }
