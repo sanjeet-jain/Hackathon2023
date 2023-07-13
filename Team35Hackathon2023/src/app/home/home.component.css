@@ -68,3 +68,24 @@ padding: 2px 16px;
 height:300px;
   width:500px;
 }
+
+.claim-reward {
+  background-color: #351c15; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 157%;
+  left: 50%;
+  
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
