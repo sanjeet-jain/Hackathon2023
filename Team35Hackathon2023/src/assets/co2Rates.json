@@ -1,0 +1,23 @@
+[
+  {
+    "VehicleType": "Boeing767",
+    "MaxCargoWeightLBs": 132200,
+    "MaxCargoVolumeLBs": 17494,
+    "GallonsFuelPerMile": 2.63,
+    "LBsCO2PerGallonFuel": 18.3
+  },
+  {
+    "VehicleType": "SemiTrailer",
+    "MaxCargoWeightLBs": 55000,
+    "MaxCargoVolumeLBs": 1376,
+    "GallonsFuelPerMile": 0.142,
+    "LBsCO2PerGallonFuel": 22.45
+  },
+  {
+    "VehicleType": "StepVan",
+    "MaxCargoWeightLBs": 12200,
+    "MaxCargoVolumeLBs": 750,
+    "GallonsFuelPerMile": 0.0909,
+    "LBsCO2PerGallonFuel": 22.45
+  }
+]
