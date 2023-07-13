@@ -8,10 +8,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NeedHelpComponent } from './need-help/need-help.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path:'', component : HomeComponent},
-  {path:'TrackingDetail', component : TrackingDetailComponent},
+  {path:'TrackingDetail/:trackingNumber', component : TrackingDetailComponent},
   {path:'Reward', component : RewardComponent},
   {path:'TrackingList', component : TrackingListComponent},
   {path:'ContactUs', component : ContactUsComponent},
@@ -21,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),HttpClientModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
