@@ -1,0 +1,47 @@
+[
+  {
+    "CustomerId": 2345980,
+    "TrackingNumber": "1ZX0Y0030498683756",
+    "PackageStatus": "Delivered",
+    "DeliveryTimeStamp": "07/12/2023 11:08",
+    "Destination": "Edison, NJ ",
+    "ServiceType": "UPS Next Day Air",
+    "WeightPerVolumeForPackage": "2 lbs"
+  },
+  {
+    "CustomerId": 2345980,
+    "TrackingNumber": "1Z9709W4YW31543397",
+    "PackageStatus": "Delivered",
+    "DeliveryTimeStamp": "07/11/2023 10:08",
+    "Destination": "Jersey City, NJ",
+    "ServiceType": "UPS Express Critical",
+    "WeightPerVolumeForPackage": "4l bs"
+  },
+  {
+    "CustomerId": 2345980,
+    "TrackingNumber": "1ZX0Y00308998683789",
+    "PackageStatus": "Delivered",
+    "DeliveryTimeStamp": "07/09/2023 09:12",
+    "Destination": "Robinsville, NJ",
+    "ServiceType": "UPS Ground",
+    "WeightPerVolumeForPackage": "20 lbs"
+  },
+  {
+    "CustomerId": 2345980,
+    "TrackingNumber": "1Z9709W4YW38943399",
+    "PackageStatus": "Delivered",
+    "DeliveryTimeStamp": "07/10/2023 11:43",
+    "Destination": "New York City, NY",
+    "ServiceType": "UPS 2nd Day Air",
+    "WeightPerVolumeForPackage": "0.7 lbs"
+  },
+  {
+    "CustomerId": 2345980,
+    "TrackingNumber": "1Z9706W4YW31543101",
+    "PackageStatus": "In transit",
+    "DeliveryTimeStamp": "07/07/2023 12:56",
+    "Destination": "Louisvillle, KY",
+    "ServiceType": "UPS 2nd Day Air",
+    "WeightPerVolumeForPackage": "9 lbs"
+  }
+]

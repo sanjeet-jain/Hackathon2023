@@ -1,1 +1,33 @@
-<p>tracking-detail works!</p>
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Tracking Number : {{trackingNumber}}</h4>
+
+            </div>
+        </div>
+
+        <div class="timeline container">
+            <div class="outer">
+                <div class="card-tracker" *ngFor="let card of cardData">
+
+                    <div class="info">
+
+                        <h3 class="title">{{ card.Location }} </h3>
+                        <p>PackageStatus: {{ card.PackageStatus }}
+                            <i class="bi bi-airplane-fill" *ngIf="card.MeansOfTransportation.includes('Air')"></i>
+                            <i class="bi bi-truck" *ngIf="card.MeansOfTransportation.includes('Truck')"></i>
+                        </p>
+                        <p>Transportation Used: {{ card.MeansOfTransportation }}</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<app-footer></app-footer>

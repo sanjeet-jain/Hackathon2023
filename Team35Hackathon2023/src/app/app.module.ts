@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TrackingDetailComponent } from './tracking-detail/tracking-detail.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NeedHelpComponent } from './need-help/need-help.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HeaderComponent,
     FooterComponent,
     TrackingDetailComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NeedHelpComponent
   ],
   imports: [
     BrowserModule,
