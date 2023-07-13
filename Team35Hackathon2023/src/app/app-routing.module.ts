@@ -9,17 +9,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NeedHelpComponent } from './need-help/need-help.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CarbonFootprintCalculatorComponent } from './carbon-footprint-calculator/carbon-footprint-calculator.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'TrackingDetail/:trackingNumber',
     component: TrackingDetailComponent,
   },
-  {
-    path: 'CarbonFootprintCalculatorComponent',
-    component: CarbonFootprintCalculatorComponent,
-  },
+
   { path: 'Reward', component: RewardComponent },
   { path: 'TrackingList', component: TrackingListComponent },
   { path: 'ContactUs', component: ContactUsComponent },

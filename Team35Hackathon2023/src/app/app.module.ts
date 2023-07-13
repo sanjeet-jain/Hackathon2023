@@ -11,7 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { TrackingDetailComponent } from './tracking-detail/tracking-detail.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NeedHelpComponent } from './need-help/need-help.component';
-import { CarbonFootprintCalculatorComponent } from './carbon-footprint-calculator/carbon-footprint-calculator.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +23,9 @@ import { CarbonFootprintCalculatorComponent } from './carbon-footprint-calculato
     TrackingDetailComponent,
     ContactUsComponent,
     NeedHelpComponent,
-    CarbonFootprintCalculatorComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
