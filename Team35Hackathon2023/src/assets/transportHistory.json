@@ -105,10 +105,34 @@
   },
   {
     "TrackingNumber": "1Z9706W4YW31543101",
+    "Location": "NYC, NY",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 200,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/06/2023 15:14"
+  },
+  {
+    "TrackingNumber": "1Z9706W4YW31543101",
+    "Location": "Winchester, VA",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 200,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/06/2023 15:14"
+  },
+  {
+    "TrackingNumber": "1Z9706W4YW31543101",
     "Location": "Lexington, KY",
     "MeansOfTransportation": "UPS Air",
     "DistanceCoveredInMiles": 687,
     "PackageStatus": "In transit ",
+    "Timestamp": "07/07/2023"
+  },
+  {
+    "TrackingNumber": "1Z9706W4YW31543101",
+    "Location": "Lexington, KY",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 2,
+    "PackageStatus": "Delivered",
     "Timestamp": "07/07/2023"
   }
 ]

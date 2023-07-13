@@ -1,11 +1,11 @@
 <app-header></app-header>
 <header class="site-header heading-div">
     <div class="site-identity">
-      <h1>
-       Tracking History
-      </h1>
+        <h1>
+            Tracking History
+        </h1>
     </div>
-  </header>
+</header>
 <div class="container">
     <div class="row">
         <div class="card">
@@ -14,8 +14,10 @@
 
             </div>
         </div>
+    </div>
+    <div class="row">
 
-        <div class="timeline container">
+        <div class="col timeline container">
             <div class="outer">
                 <div class="card-tracker" *ngFor="let card of cardData; let i = index">
                     <div #movingObject class="moving-object-odd" *ngIf="i === 0"
@@ -54,8 +56,25 @@
 
             </div>
         </div>
+        <div class="col container">
+            <div class="outer">
+                <div class="card card-stats" *ngFor="let carbon of carbonFootPrintData">
+                    <div class="card-body">
+                        <p class="card-text">Trip to Location: {{ carbon.Location }}</p>
+                        <p class="card-text">Reward Points Earned: {{ carbon.RewardsPoints.toFixed(0) }}</p>
+                        <p class="card-text">Carbon Footprint till the location was {{ carbon.CarbonFootPrint.toFixed(3)
+                            }} kg CO2e</p>
+                        <p>Percent diff from UPS Average:
+                            {{(100*(2.55-carbon.CarbonFootPrint.toFixed(3)*2.205)/2.55).toFixed(3)}}%</p>
+                    </div>
+                </div>
 
+
+
+            </div>
+        </div>
     </div>
+
 
 </div>
 <app-footer></app-footer>

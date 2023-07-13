@@ -10,7 +10,7 @@ import { addCarbonFootprint } from '../helpers/carbon-footprint.helper';
 })
 export class TrackingDetailComponent implements OnInit {
   cardData: any[] = [];
-
+  carbonFootPrintData: any[] = [];
   trackingNumber: string = '';
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
@@ -36,8 +36,12 @@ export class TrackingDetailComponent implements OnInit {
   fetchCardData(trackingNumber: string) {
     // Replace 'path/to/your/json' with the actual path to your JSON file
     this.http.get<any[]>('assets/transportHistory.json').subscribe((data) => {
-      console.log(data);
       this.cardData = data.filter((x) => x.TrackingNumber === trackingNumber);
+
+      this.carbonFootPrintData = addCarbonFootprint().filter(
+        (x) => x.TrackingNumber === trackingNumber
+      );
+      console.log(this.carbonFootPrintData);
       for (let i = 0; i < this.cardData.length; i++) {
         this.onAnimationEndArr.push(false);
       }

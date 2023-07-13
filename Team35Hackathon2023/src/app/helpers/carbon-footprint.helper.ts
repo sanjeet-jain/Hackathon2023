@@ -62,7 +62,6 @@ export function addCarbonFootprint() {
     carbonEmissionData.push(pack);
   }
   // const data = JSON.stringify(carbonEmissionData);
-  console.log(carbonEmissionData);
   return carbonEmissionData;
 }
 
