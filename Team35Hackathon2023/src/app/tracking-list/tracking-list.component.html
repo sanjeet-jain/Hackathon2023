@@ -1,1 +1,30 @@
-<p>tracking-list works!</p>
+<app-header></app-header>
+
+<div class="container">
+    <h1>Package Details</h1>
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+
+                <th>Tracking Number</th>
+                <th>Package Status</th>
+                <th>Delivery Time Stamp</th>
+                <th>Destination</th>
+                <th>Service Type</th>
+                <th>Weight per Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let package of packages">
+
+                <td><a href="TrackingDetail/{{ package.TrackingNumber }}">{{ package.TrackingNumber }}</a></td>
+                <td>{{ package.PackageStatus }}</td>
+                <td>{{ package.DeliveryTimeStamp }}</td>
+                <td>{{ package.Destination }}</td>
+                <td>{{ package.ServiceType }}</td>
+                <td>{{ package.WeightPerVolumeForPackage }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>
