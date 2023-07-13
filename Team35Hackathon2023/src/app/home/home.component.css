@@ -1,27 +1,91 @@
-.banner {
-  background-color: #674929; /* Set the background color for the banner */
-  color: #fff; /* Set the text color for the banner */
-  padding: 20px; /* Add some padding around the text */
-  font-size: 60px; /* Set the font size for the text */
-  text-align: left; /* Center align the text */
-  font-weight: bold; /* Make the text bold */
-  justify-content: bottom; /* Center the text horizontally */
-  align-items: center; /* Center the text vertically */
+site-header {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sub-text {
-  font-size: 40px; /* Set the font size for the sub-text */
-  color: darkgoldenrod;
-  font-weight: bold;
-  text-align: center; /* Center the sub-text horizontally */
+.site-identity h1 {
+font-size: 1.5em;
+margin: 0.6em 0;
+display: inline-block;
 }
 
-.sub-text2 {
-  font-size: 40px; /* Set the font size for the sub-text */
-  color: darkgoldenrod;
+.heading-div{
+background :  #351c15;
+color: white;
 }
 
-.claim-button {
-  background-color: darkgoldenrod !important;
+.subheader-h1{
+  font-size: 30px;
+  font-weight: 600;
+  text-align:center;
+background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.padding-size{
+  padding: 15px;
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 50%;
+padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
+
+.container {
+padding: 2px 16px;
+}
+
+.img-size{
+height:300px;
+  width:500px;
+}
+
+.claim-reward {
+  background-color: #351c15; /* Green */
+  border: none;
   color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 157%;
+  left: 50%;
+  
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
