@@ -9,20 +9,27 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NeedHelpComponent } from './need-help/need-help.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CarbonFootprintCalculatorComponent } from './carbon-footprint-calculator/carbon-footprint-calculator.component';
 const routes: Routes = [
-  {path:'', component : HomeComponent},
-  {path:'TrackingDetail/:trackingNumber', component : TrackingDetailComponent},
-  {path:'Reward', component : RewardComponent},
-  {path:'TrackingList', component : TrackingListComponent},
-  {path:'ContactUs', component : ContactUsComponent},
-  {path:'Footer', component : FooterComponent},
-  {path:'Header', component : HeaderComponent},
-  {path:'NeedHelp', component : NeedHelpComponent}
+  { path: '', component: HomeComponent },
+  {
+    path: 'TrackingDetail/:trackingNumber',
+    component: TrackingDetailComponent,
+  },
+  {
+    path: 'CarbonFootprintCalculatorComponent',
+    component: CarbonFootprintCalculatorComponent,
+  },
+  { path: 'Reward', component: RewardComponent },
+  { path: 'TrackingList', component: TrackingListComponent },
+  { path: 'ContactUs', component: ContactUsComponent },
+  { path: 'Footer', component: FooterComponent },
+  { path: 'Header', component: HeaderComponent },
+  { path: 'NeedHelp', component: NeedHelpComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),HttpClientModule],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), HttpClientModule],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
