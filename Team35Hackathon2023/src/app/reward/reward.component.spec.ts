@@ -19,3 +19,4 @@ describe('RewardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

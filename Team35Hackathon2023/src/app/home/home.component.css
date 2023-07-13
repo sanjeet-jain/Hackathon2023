@@ -1,0 +1,201 @@
+
+  .banner {
+    background-color: #674929; /* Set the background color for the banner */
+    color: #fff; /* Set the text color for the banner */
+    padding: 20px; /* Add some padding around the text */
+    font-size: 60px; /* Set the font size for the text */
+    text-align: left; /* Center align the text */
+    font-weight: bold; /* Make the text bold */
+    justify-content: bottom; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    width: 1455x; /* Set the width of the banner */
+    height: 100px; /* Set the height of the banner */
+  }
+  
+
+  .sub-text {
+  font-size: 40px; /* Set the font size for the sub-text */
+  color: darkgoldenrod;
+  font-weight: bold;  
+  text-align: center; /* Center the sub-text horizontally */
+  margin-top: 30px; /* Add some spacing between the main text and sub-text */
+  position: absolute; /* Position the sub-text absolutely */
+  top: 40%; /* Move the sub-text to the vertical center */
+  left: 50%; /* Move the sub-text to the horizontal center */
+  transform: translate(-50%, -50%); /* Center the sub-text precisely */
+
+    
+  }
+
+
+
+  .image1 {
+    max-width: 80%; /* Set the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    position: absolute; /* Position the image */
+    right: 700px; /* Move the image to the right side */
+    top: 350px;
+    bottom: 0; /* Move the image to the bottom */
+  }
+
+
+
+  .image-caption {    
+    max-width: 80%; /* Set the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    font-size: 20px; /* Set the font size for the image caption */
+    text-align: right; /* Center the image caption */
+    margin-top: -2px;
+    top: 0; /* Move the sub-text to the vertical center */
+    left: 0; /* Move the sub-text to the horizontal center */
+    transform: translate(10%, -50%); /* Center the sub-text precisely */
+  
+    margin-top: -5px; /* Add spacing between the image and caption */
+  }
+
+
+  .image2 {
+    max-width: 1px; /* Set the maximum width of the image */
+    height: 1px; /* Set the height of the image */
+    position: absolute; /* Position the image */
+    right: -200px; /* Move the image to the right side */
+    top: 1px;
+    bottom: 0; /* Move the image to the bottom */
+  }
+  
+
+  .image-caption2 {
+    width: 10%; /* Set the width of the image */
+    height: 100; /* Maintain the aspect ratio of the image */
+    font-size: 20px; /* Set the font size for the image caption */
+    text-align: center; /* Center the image caption */
+    margin-top: -2px;
+    top: 0; /* Move the sub-text to the vertical center */
+    left: 5; /* Move the sub-text to the horizontal center */
+   
+    margin-top:-5px; /* Add spacing between the image and caption */
+
+    justify-content: center; /* Center align items horizontally */
+     
+    
+
+  }
+  
+  
+  
+  .sub-text2 {
+    font-size: 40px; /* Set the font size for the sub-text */
+    color: darkgoldenrod;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent line breaks */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    margin-top: 10px; /* Add spacing between the image and caption */
+    margin-left: -300px; /* Move the text slightly to the left */
+ 
+    
+      
+    }
+
+
+    .sub-text3 {
+      font-size: 20px; /* Set the font size for the sub-text */
+      font-style: italic;
+      font-weight: lighter;
+      font-family: 'Times New Roman', Times, serif;
+      color: darkgoldenrod;
+      display: flex;
+      align-items: center;
+      white-space: nowrap; /* Prevent line breaks */
+      
+    justify-content: center; /* Center align items horizontally */
+    margin-top: 10px; /* Add spacing between the image and caption */
+    margin-left: -200px; /* Move the text slightly to the left */
+    
+    }
+
+
+
+ 
+  .large-image1 {
+    width:400px;
+    margin-top: 45px;
+    margin-left: -650px;
+  }
+
+
+  .sub-text4 {
+    font-size: 16px; /* Set the font size for the sub-text */
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent line breaks */
+    
+  justify-content: center; /* Center align items horizontally */
+  margin-top: 10px; /* Add spacing between the image and caption */
+  margin-left: -870px; /* Move the text slightly to the left */
+  
+  }
+
+  .large-image2 {
+    width:550px;
+    height: 250px;
+    margin-top: -200px;
+    margin-right: 10px;
+    margin-left: -100px;
+    position: relative;
+    top: -101px;
+  }
+
+
+  .sub-text5 {
+    font-size: 16px; /* Set the font size for the sub-text */
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent line breaks */
+    
+  justify-content: right; /* Center align items horizontally */
+  margin-top: -90px; /* Add spacing between the image and caption */
+  margin-left: 550px; /* Move the text slightly to the left */
+  
+  }
+
+  .container {
+    text-align: center;
+  }
+  
+  .container button {
+    display: inline-block;
+    /* Additional styles for the button */
+  }
+
+  .claim-button {
+    background-color: darkgoldenrod;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    
+    margin-left: -250px;
+    top: 50px;
+    
+    position: relative;
+    
+
+  }
+
