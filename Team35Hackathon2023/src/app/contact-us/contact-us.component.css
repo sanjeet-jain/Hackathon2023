@@ -26,12 +26,13 @@ background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb);
   -webkit-background-clip: text;
 }
 .padding-size{
-  padding: 40px;
+  padding: 15px;
 }
 
 .styled-table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
