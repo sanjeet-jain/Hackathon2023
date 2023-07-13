@@ -48,6 +48,7 @@ export function addCarbonFootprint() {
     }
     var CarbonEmission =
       (packageWeight / maxWeight) * distance * mpg * emissionsPerMile;
+    var Rewards = Math.round(100 * (1 - CarbonEmission * 0.0001));
     var pack: transportHistoryCarbon = {
       TrackingNumber: transportHistoryData[i].TrackingNumber,
       Location: transportHistoryData[i].Location,
@@ -56,6 +57,7 @@ export function addCarbonFootprint() {
       PackageStatus: transportHistoryData[i].PackageStatus,
       Timestamp: transportHistoryData[i].Timestamp,
       CarbonFootPrint: CarbonEmission,
+      RewardsPoints: Rewards,
     };
     carbonEmissionData.push(pack);
   }
@@ -72,6 +74,7 @@ interface transportHistoryCarbon {
   PackageStatus: String;
   Timestamp: String;
   CarbonFootPrint: Number;
+  RewardsPoints: Number;
 }
 interface CarbonData {
   VehicleType: String;

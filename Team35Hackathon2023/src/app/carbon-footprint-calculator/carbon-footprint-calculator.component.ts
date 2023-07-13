@@ -64,7 +64,7 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
       }
       var CarbonEmission =
         (packageWeight / maxWeight) * distance * mpg * emissionsPerMile;
-      var Rewards = 100 * (1 - (CarbonEmission * 0.0001));
+      var Rewards = Math.round(100 * (1 - CarbonEmission * 0.0001));
       var pack: transportHistoryCarbon = {
         TrackingNumber: this.transportHistoryData[i].TrackingNumber,
         Location: this.transportHistoryData[i].Location,
