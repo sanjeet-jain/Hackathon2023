@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { addCarbonFootprint } from '../helpers/carbon-footprint.helper';
 
 @Component({
   selector: 'app-tracking-detail',
@@ -40,7 +41,6 @@ export class TrackingDetailComponent implements OnInit {
       for (let i = 0; i < this.cardData.length; i++) {
         this.onAnimationEndArr.push(false);
       }
-      console.log(this.cardData);
     });
   }
 }
