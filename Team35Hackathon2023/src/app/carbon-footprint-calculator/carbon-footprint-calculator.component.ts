@@ -5,18 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-carbon-footprint-calculator',
   templateUrl: './carbon-footprint-calculator.component.html',
-  styleUrls: ['./carbon-footprint-calculator.component.css']
+  styleUrls: ['./carbon-footprint-calculator.component.css'],
 })
-
-  interface packageDetail {
-  CustomerId: Number;
-  TrackingNumber: String;
-  PackageStatus: String;
-  DeliveryTimeStamp: String;
-  Destination: String;
-  ServiceType: String;
-  WeightPerVolumeForPackage: String;
-}
 export class CarbonFootprintCalculatorComponent implements OnInit {
   carbonRatesData: any[] = [];
   transportHistoryData: any[] = [];
@@ -24,7 +14,7 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
   carbonEmissionData: any[] = [];
   map = new Map<string, number>();
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) { }
+  constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.fetchCarbonRates();
@@ -53,33 +43,34 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
     });
     for (let i = 0; i < this.packageData.length; i++) {
       let number = this.packageData[i].WeightPerVolumeForPackage;
-      this.map.set(this.packageData[i].TrackingNumber, parseFloat(number.match(/[0-9.]+/g)));
+      this.map.set(
+        this.packageData[i].TrackingNumber,
+        parseFloat(number.match(/[0-9.]+/g))
+      );
     }
     console.log(this.packageData);
   }
 
   addCarbonFootprint() {
+    console.log(1);
     for (let i = 0; i < this.transportHistoryData.length; i++) {
       var distance = this.transportHistoryData[i].DistanceCoveredInMiles;
       var shippingMethod = this.transportHistoryData[i].MeansOfTransportation;
-      var packageWeight = this.map.get(this.transportHistoryData[i].TrackingNumber);
-      if (packageWeight != undefined) {
-        packageWeight / 2;
-      } else {
-        throw new Error('Item is undefined');
-      }
-      packageWeight *= 2;
+      var packageWeight = this.map.get(
+        this.transportHistoryData[i].TrackingNumber
+      )!;
+      console.log(packageWeight);
       var mpg = 0.0;
       var emissionsPerMile = 0.0;
       var maxWeight = 0.0;
       switch (shippingMethod) {
-        case "UPS  Air":
+        case 'UPS  Air':
           mpg = this.carbonRatesData[0].GallonsFuelPerMile;
           emissionsPerMile = this.carbonRatesData[0].LBsCO2PerGallonFuel;
           maxWeight = this.carbonRatesData[0].MaxCargoWeightLBs;
           break;
-        case "UPS Truck":
-          if (this.transportHistoryData[i].PackageStatus = "In transit ") {
+        case 'UPS Truck':
+          if ((this.transportHistoryData[i].PackageStatus = 'In transit ')) {
             mpg = this.carbonRatesData[1].GallonsFuelPerMile;
             emissionsPerMile = this.carbonRatesData[1].LBsCO2PerGallonFuel;
             maxWeight = this.carbonRatesData[1].MaxCargoWeightLBs;
@@ -95,31 +86,24 @@ export class CarbonFootprintCalculatorComponent implements OnInit {
           maxWeight = 0.0;
           break;
       }
-      var CarbonEmission = (packageWeight / maxWeight) * distance * mpg * emissionsPerMile;
+      var CarbonEmission =
+        (packageWeight / maxWeight) * distance * mpg * emissionsPerMile;
       var pack: transportHistoryCarbon = {
-          TrackingNumber: this.transportHistoryData[i].TrackingNumber,
+        TrackingNumber: this.transportHistoryData[i].TrackingNumber,
         Location: this.transportHistoryData[i].Location,
-        MeansOfTransportation: this.transportHistoryData[i].MeansOfTransportation,
-        DistanceCoveredInMiles: this.transportHistoryData[i].DistanceCoveredInMiles,
+        MeansOfTransportation:
+          this.transportHistoryData[i].MeansOfTransportation,
+        DistanceCoveredInMiles:
+          this.transportHistoryData[i].DistanceCoveredInMiles,
         PackageStatus: this.transportHistoryData[i].PackageStatus,
         Timestamp: this.transportHistoryData[i].Timestamp,
-        CarbonFootPrint: CarbonEmission
+        CarbonFootPrint: CarbonEmission,
       };
       this.carbonEmissionData.push(pack);
     }
     const data = JSON.stringify(this.carbonEmissionData);
     console.log(JSON.stringify(this.carbonEmissionData));
-    const { writeFileSync } = require('fs');
-
-    const path = './finalCarbonEmissions.json';
-
-    try {
-      writeFileSync(path, JSON.stringify(data, null, 2), 'utf8');
-      console.log('Data successfully saved to disk');
-    } catch (error) {
-      console.log('An error has occurred ', error);
-    }
- }
+  }
 }
 
 interface transportHistoryCarbon {
@@ -136,8 +120,14 @@ interface CarbonData {
   MaxCargoWeightLBs: Number;
   MaxCargoVolumeLBs: Number;
   GallonsFuelPerMile: Number;
-  LBsCO2PerGallonFuel: Number
+  LBsCO2PerGallonFuel: Number;
 }
-
-
-
+interface packageDetail {
+  CustomerId: Number;
+  TrackingNumber: String;
+  PackageStatus: String;
+  DeliveryTimeStamp: String;
+  Destination: String;
+  ServiceType: String;
+  WeightPerVolumeForPackage: String;
+}
