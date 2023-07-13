@@ -10,8 +10,29 @@
 
         <div class="timeline container">
             <div class="outer">
-                <div class="card-tracker" *ngFor="let card of cardData">
-
+                <div class="card-tracker" *ngFor="let card of cardData; let i = index">
+                    <div #movingObject class="moving-object-odd" *ngIf="i === 0"
+                        (animationend)="onAnimationEnd(i,movingObject)">
+                        <h3>
+                            <i class="bi bi-airplane-fill" *ngIf="card.MeansOfTransportation.includes('Air')"></i>
+                            <i class="bi bi-truck" *ngIf="card.MeansOfTransportation.includes('Truck')"></i>
+                        </h3>
+                    </div>
+                    <div #movingObject class="moving-object-odd"
+                        *ngIf="i!=0 && i%2 === 0 && onAnimationEndArr[i-1]!=false"
+                        (animationend)="onAnimationEnd(i,movingObject)">
+                        <h3>
+                            <i class="bi bi-airplane-fill" *ngIf="card.MeansOfTransportation.includes('Air')"></i>
+                            <i class="bi bi-truck" *ngIf="card.MeansOfTransportation.includes('Truck')"></i>
+                        </h3>
+                    </div>
+                    <div #movingObject class="moving-object-even" *ngIf="i % 2 === 1 && onAnimationEndArr[i-1]!=false"
+                        (animationend)="onAnimationEnd(i,movingObject)">
+                        <h3>
+                            <i class="bi bi-airplane-fill" *ngIf="card.MeansOfTransportation.includes('Air')"></i>
+                            <i class="bi bi-truck" *ngIf="card.MeansOfTransportation.includes('Truck')"></i>
+                        </h3>
+                    </div>
                     <div class="info">
 
                         <h3 class="title">{{ card.Location }} </h3>
