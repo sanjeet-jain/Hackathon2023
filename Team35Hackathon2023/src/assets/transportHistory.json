@@ -1,122 +1,114 @@
 [
-    {
-     "TrackingNumber": "1ZX0Y0030498683756",
-     "Location": "Charleston, SC",
-     "MeansOfTransportation": "UPS  Air",
-     "DistanceCoveredInMiles": 0,
-     "PackageStatus": "Pickup",
-     "Timestamp": "07\/11\/2023 12:05"
-    },
-    {
-     "TrackingNumber": "1ZX0Y0030498683756",
-     "Location": "Elizabeth, NJ",
-     "MeansOfTransportation": "UPS  Air",
-     "DistanceCoveredInMiles": 687,
-     "PackageStatus": "In transit ",
-     "Timestamp": "07\/11\/2023"
-    },
-    {
-     "TrackingNumber": "1ZX0Y0030498683756",
-     "Location": "Edison, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 35,
-     "PackageStatus": "Delivered ",
-     "Timestamp": "07\/12\/2023 11:08"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW31543397",
-     "Location": "Asbury Park, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 0,
-     "PackageStatus": "Pickup",
-     "Timestamp": "07\/10\/2023 23:09"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW31543397",
-     "Location": "Holmdel, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 16,
-     "PackageStatus": "In transit ",
-     "Timestamp": "07\/11\/2023 04:00"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW31543397",
-     "Location": "Jersey City, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 40,
-     "PackageStatus": "Delivered ",
-     "Timestamp": "07\/11\/2023 10:08"
-    },
-    {
-     "TrackingNumber": "1ZX0Y00308998683789",
-     "Location": "Dover, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 0,
-     "PackageStatus": "Pickup",
-     "Timestamp": "07\/07\/2023 15:30"
-    },
-    {
-     "TrackingNumber": "1ZX0Y00308998683789",
-     "Location": "Elizabeth, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 31,
-     "PackageStatus": "In transit ",
-     "Timestamp": "07\/08\/2023 14:04"
-    },
-    {
-     "TrackingNumber": "1ZX0Y00308998683789",
-     "Location": "Robinsville, NJ",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 40,
-     "PackageStatus": "Delivered ",
-     "Timestamp": "07\/09\/2023 09:12"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW38943399",
-     "Location": "Las Vegas, NV",
-     "MeansOfTransportation": "UPS Air",
-     "DistanceCoveredInMiles": 0,
-     "PackageStatus": "Pickup",
-     "Timestamp": "07\/09\/2023 10:00"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW38943399",
-     "Location": "Elizabeth, NJ",
-     "MeansOfTransportation": "UPS Air",
-     "DistanceCoveredInMiles": 2520,
-     "PackageStatus": "In transit ",
-     "Timestamp": "07\/10\/2023 04:06"
-    },
-    {
-     "TrackingNumber": "1Z9709W4YW38943399",
-     "Location": "New York City, NY",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 15,
-     "PackageStatus": "Delivered ",
-     "Timestamp": "07\/10\/2023 11:43"
-    },
-    {
-     "TrackingNumber": "1Z9706W4YW31543101",
-     "Location": "Parsipanny, NJ",
-     "MeansOfTransportation": "UPS Air",
-     "DistanceCoveredInMiles": 0,
-     "PackageStatus": "Pickup",
-     "Timestamp": "07\/06\/2023 15:14"
-    },
-    {
-     "TrackingNumber": "1Z9706W4YW31543101",
-     "Location": "Lexington, KY",
-     "MeansOfTransportation": "UPS Air",
-     "DistanceCoveredInMiles": 687,
-     "PackageStatus": "In transit ",
-     "Timestamp": "07\/07\/2023"
-    },
-    {
-     "TrackingNumber": "1Z9706W4YW31543101",
-     "Location": "Louisville, KY",
-     "MeansOfTransportation": "UPS Truck",
-     "DistanceCoveredInMiles": 30,
-     "PackageStatus": "Delivered ",
-     "Timestamp": "07\/07\/2023 12:56"
-    }
-   ]
+  {
+    "TrackingNumber": "1ZX0Y0030498683756",
+    "Location": "Charleston, SC",
+    "MeansOfTransportation": "UPS  Air",
+    "DistanceCoveredInMiles": 0,
+    "PackageStatus": "Pickup",
+    "Timestamp": "07/11/2023 12:05"
+  },
+  {
+    "TrackingNumber": "1ZX0Y0030498683756",
+    "Location": "Elizabeth, NJ",
+    "MeansOfTransportation": "UPS  Air",
+    "DistanceCoveredInMiles": 687,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/11/2023"
+  },
+  {
+    "TrackingNumber": "1ZX0Y0030498683756",
+    "Location": "Edison, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 35,
+    "PackageStatus": "Delivered ",
+    "Timestamp": "07/12/2023 11:08"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW31543397",
+    "Location": "Asbury Park, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 0,
+    "PackageStatus": "Pickup",
+    "Timestamp": "07/10/2023 23:09"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW31543397",
+    "Location": "Holmdel, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 16,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/11/2023 04:00"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW31543397",
+    "Location": "Jersey City, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 40,
+    "PackageStatus": "Delivered ",
+    "Timestamp": "07/11/2023 10:08"
+  },
+  {
+    "TrackingNumber": "1ZX0Y00308998683789",
+    "Location": "Dover, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 0,
+    "PackageStatus": "Pickup",
+    "Timestamp": "07/07/2023 15:30"
+  },
+  {
+    "TrackingNumber": "1ZX0Y00308998683789",
+    "Location": "Elizabeth, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 31,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/08/2023 14:04"
+  },
+  {
+    "TrackingNumber": "1ZX0Y00308998683789",
+    "Location": "Robinsville, NJ",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 40,
+    "PackageStatus": "Delivered ",
+    "Timestamp": "07/09/2023 09:12"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW38943399",
+    "Location": "Las Vegas, NV",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 0,
+    "PackageStatus": "Pickup",
+    "Timestamp": "07/09/2023 10:00"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW38943399",
+    "Location": "Elizabeth, NJ",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 2520,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/10/2023 04:06"
+  },
+  {
+    "TrackingNumber": "1Z9709W4YW38943399",
+    "Location": "New York City, NY",
+    "MeansOfTransportation": "UPS Truck",
+    "DistanceCoveredInMiles": 15,
+    "PackageStatus": "Delivered ",
+    "Timestamp": "07/10/2023 11:43"
+  },
+  {
+    "TrackingNumber": "1Z9706W4YW31543101",
+    "Location": "Parsipanny, NJ",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 0,
+    "PackageStatus": "Pickup",
+    "Timestamp": "07/06/2023 15:14"
+  },
+  {
+    "TrackingNumber": "1Z9706W4YW31543101",
+    "Location": "Lexington, KY",
+    "MeansOfTransportation": "UPS Air",
+    "DistanceCoveredInMiles": 687,
+    "PackageStatus": "In transit ",
+    "Timestamp": "07/07/2023"
+  }
+]

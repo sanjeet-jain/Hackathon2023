@@ -38,7 +38,7 @@
   {
     "CustomerId": 2345980,
     "TrackingNumber": "1Z9706W4YW31543101",
-    "PackageStatus": "Delivered",
+    "PackageStatus": "In transit",
     "DeliveryTimeStamp": "07/07/2023 12:56",
     "Destination": "Louisvillle, KY",
     "ServiceType": "UPS 2nd Day Air",
