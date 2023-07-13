@@ -5,7 +5,8 @@
     "MeansOfTransportation": "UPS  Air",
     "DistanceCoveredInMiles": 0,
     "PackageStatus": "Pickup",
-    "Timestamp": "07/11/2023 12:05"
+    "Timestamp": "07/11/2023 12:05",
+    "VehicleType": "Boeing767"
   },
   {
     "TrackingNumber": "1ZX0Y0030498683756",
@@ -13,7 +14,8 @@
     "MeansOfTransportation": "UPS  Air",
     "DistanceCoveredInMiles": 687,
     "PackageStatus": "In transit ",
-    "Timestamp": "07/11/2023"
+    "Timestamp": "07/11/2023",
+    "VehicleType": "Boeing767"
   },
   {
     "TrackingNumber": "1ZX0Y0030498683756",
@@ -21,7 +23,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 35,
     "PackageStatus": "Delivered ",
-    "Timestamp": "07/12/2023 11:08"
+    "Timestamp": "07/12/2023 11:08",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1Z9709W4YW31543397",
@@ -29,7 +32,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 0,
     "PackageStatus": "Pickup",
-    "Timestamp": "07/10/2023 23:09"
+    "Timestamp": "07/10/2023 23:09",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1Z9709W4YW31543397",
@@ -37,7 +41,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 16,
     "PackageStatus": "In transit ",
-    "Timestamp": "07/11/2023 04:00"
+    "Timestamp": "07/11/2023 04:00",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1Z9709W4YW31543397",
@@ -45,7 +50,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 40,
     "PackageStatus": "Delivered ",
-    "Timestamp": "07/11/2023 10:08"
+    "Timestamp": "07/11/2023 10:08",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1ZX0Y00308998683789",
@@ -53,7 +59,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 0,
     "PackageStatus": "Pickup",
-    "Timestamp": "07/07/2023 15:30"
+    "Timestamp": "07/07/2023 15:30",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1ZX0Y00308998683789",
@@ -61,7 +68,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 31,
     "PackageStatus": "In transit ",
-    "Timestamp": "07/08/2023 14:04"
+    "Timestamp": "07/08/2023 14:04",
+    "VehicleType": "SemiTrailer"
   },
   {
     "TrackingNumber": "1ZX0Y00308998683789",
@@ -69,7 +77,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 40,
     "PackageStatus": "Delivered ",
-    "Timestamp": "07/09/2023 09:12"
+    "Timestamp": "07/09/2023 09:12",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1Z9709W4YW38943399",
@@ -77,7 +86,8 @@
     "MeansOfTransportation": "UPS Air",
     "DistanceCoveredInMiles": 0,
     "PackageStatus": "Pickup",
-    "Timestamp": "07/09/2023 10:00"
+    "Timestamp": "07/09/2023 10:00",
+    "VehicleType": "Boeing767"
   },
   {
     "TrackingNumber": "1Z9709W4YW38943399",
@@ -85,7 +95,8 @@
     "MeansOfTransportation": "UPS Air",
     "DistanceCoveredInMiles": 2520,
     "PackageStatus": "In transit ",
-    "Timestamp": "07/10/2023 04:06"
+    "Timestamp": "07/10/2023 04:06",
+    "VehicleType": "Boeing767"
   },
   {
     "TrackingNumber": "1Z9709W4YW38943399",
@@ -93,7 +104,8 @@
     "MeansOfTransportation": "UPS Truck",
     "DistanceCoveredInMiles": 15,
     "PackageStatus": "Delivered ",
-    "Timestamp": "07/10/2023 11:43"
+    "Timestamp": "07/10/2023 11:43",
+    "VehicleType": "StepVan"
   },
   {
     "TrackingNumber": "1Z9706W4YW31543101",
@@ -101,7 +113,8 @@
     "MeansOfTransportation": "UPS Air",
     "DistanceCoveredInMiles": 0,
     "PackageStatus": "Pickup",
-    "Timestamp": "07/06/2023 15:14"
+    "Timestamp": "07/06/2023 15:14",
+    "VehicleType": "Boeing767"
   },
   {
     "TrackingNumber": "1Z9706W4YW31543101",
@@ -109,6 +122,7 @@
     "MeansOfTransportation": "UPS Air",
     "DistanceCoveredInMiles": 687,
     "PackageStatus": "In transit ",
-    "Timestamp": "07/07/2023"
+    "Timestamp": "07/07/2023",
+    "VehicleType": "Boeing767"
   }
 ]

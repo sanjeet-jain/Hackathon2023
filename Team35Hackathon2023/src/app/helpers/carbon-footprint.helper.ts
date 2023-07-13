@@ -18,32 +18,31 @@ export function addCarbonFootprint() {
   }
   for (let i = 0; i < transportHistoryData.length; i++) {
     var distance = transportHistoryData[i].DistanceCoveredInMiles;
-    var shippingMethod = transportHistoryData[i].MeansOfTransportation;
+    var shippingMethod = transportHistoryData[i].VehicleType;
     var packageWeight = map.get(transportHistoryData[i].TrackingNumber)!;
     var mpg = 0.0;
     var emissionsPerMile = 0.0;
-    var maxWeight = 0.0;
+    var maxWeight = 1.0;
     switch (shippingMethod) {
-      case 'UPS  Air':
+      case 'Boeing767':
         mpg = carbonRatesData[0].GallonsFuelPerMile;
         emissionsPerMile = carbonRatesData[0].LBsCO2PerGallonFuel;
         maxWeight = carbonRatesData[0].MaxCargoWeightLBs;
         break;
-      case 'UPS Truck':
-        if ((transportHistoryData[i].PackageStatus = 'In transit ')) {
-          mpg = carbonRatesData[1].GallonsFuelPerMile;
-          emissionsPerMile = carbonRatesData[1].LBsCO2PerGallonFuel;
-          maxWeight = carbonRatesData[1].MaxCargoWeightLBs;
-        } else {
-          mpg = carbonRatesData[2].GallonsFuelPerMile;
-          emissionsPerMile = carbonRatesData[2].LBsCO2PerGallonFuel;
-          maxWeight = carbonRatesData[2].MaxCargoWeightLBs;
-        }
+      case 'SemiTrailer':
+        mpg = carbonRatesData[1].GallonsFuelPerMile;
+        emissionsPerMile = carbonRatesData[1].LBsCO2PerGallonFuel;
+        maxWeight = carbonRatesData[1].MaxCargoWeightLBs;
+        break;
+      case 'StepVan':
+        mpg = carbonRatesData[2].GallonsFuelPerMile;
+        emissionsPerMile = carbonRatesData[2].LBsCO2PerGallonFuel;
+        maxWeight = carbonRatesData[2].MaxCargoWeightLBs;
         break;
       default:
         mpg = 0.0;
         emissionsPerMile = 0.0;
-        maxWeight = 0.0;
+        maxWeight = 1.0;
         break;
     }
     var CarbonEmission =
@@ -56,6 +55,7 @@ export function addCarbonFootprint() {
       DistanceCoveredInMiles: transportHistoryData[i].DistanceCoveredInMiles,
       PackageStatus: transportHistoryData[i].PackageStatus,
       Timestamp: transportHistoryData[i].Timestamp,
+      VehicleType: transportHistoryData[i].VehicleType,
       CarbonFootPrint: CarbonEmission,
       RewardsPoints: Rewards,
     };
@@ -73,6 +73,7 @@ interface transportHistoryCarbon {
   DistanceCoveredInMiles: Number;
   PackageStatus: String;
   Timestamp: String;
+  VehicleType: String;
   CarbonFootPrint: Number;
   RewardsPoints: Number;
 }
